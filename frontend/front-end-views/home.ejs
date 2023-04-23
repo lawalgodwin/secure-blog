@@ -1,0 +1,40 @@
+
+
+<h1>Welcome to Blog!</h1>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>fname</th>
+          <th>lname</th>
+          <th>username</th>
+          <th>password</th>
+          <th>email</th>
+          <th>phoneno</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i < rows.length; i++) { %>
+          <tr>
+            <td><%= rows[i].id %></td>
+            <td><%= rows[i].fname %></td>
+            <td><%= rows[i].lname %></td>
+            <td><%= rows[i].username %></td>
+            <td><%= rows[i].password %></td>
+            <td><%= rows[i].email %></td>
+            <td><%= rows[i].phoneno %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
